@@ -2,11 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class Manager : Loader<Manager>
 {
-    public static Manager instance = null;
-    
-    
+
     public GameObject spawnPoint;
 
     public GameObject[] enemies;
@@ -17,22 +15,6 @@ public class Manager : MonoBehaviour
 
     private int enemiesOnScreen = 0;
     private const float spawnDelay = 0.5f;
-
-
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != null)
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-    }
 
 
     private void Start()

@@ -3365,6 +3365,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &213719240 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+  m_PrefabInstance: {fileID: 1840862088}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &213775891
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,7 +4904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5560821845615603718, guid: 4aa090d0193917741a4a03d9fe997ae3, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (7)
+      value: MovingPoint (7)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4aa090d0193917741a4a03d9fe997ae3, type: 3}
@@ -8552,7 +8557,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1045440044613022027, guid: 0ed918bcfb7c2754fb0f6accb66c95ae, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (9)
+      value: MovingPoint (9)
       objectReference: {fileID: 0}
     - target: {fileID: 8394944572674534483, guid: 0ed918bcfb7c2754fb0f6accb66c95ae, type: 3}
       propertyPath: m_RootOrder
@@ -12881,7 +12886,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4632834878730223473, guid: 49232cfe481e807488eea803f9894a88, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (3)
+      value: MovingPoint (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49232cfe481e807488eea803f9894a88, type: 3}
@@ -14047,7 +14052,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2645174350102442500, guid: d1e7a0a703c4a3f4caa0390ce92ee869, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint
+      value: MovingPoint
       objectReference: {fileID: 0}
     - target: {fileID: 6825064208765284124, guid: d1e7a0a703c4a3f4caa0390ce92ee869, type: 3}
       propertyPath: m_RootOrder
@@ -14762,7 +14767,6 @@ GameObject:
   - component: {fileID: 963194228}
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
-  - component: {fileID: 963194229}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -14831,23 +14835,11 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 213719240}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &963194229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4262388b9bd32e4ebb6c77c8df68306, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  manager: {fileID: 9131328577160922197, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
 --- !u!1 &973112778
 GameObject:
   m_ObjectHideFlags: 0
@@ -16956,7 +16948,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6267582461088882243, guid: 7f839b3a300867a46a6b750af79c69e3, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (2)
+      value: MovingPoint (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f839b3a300867a46a6b750af79c69e3, type: 3}
@@ -22226,7 +22218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6145864968444292133, guid: fc6d9d6acfa1e194ea05a6ba4a360e17, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (10)
+      value: MovingPoint (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc6d9d6acfa1e194ea05a6ba4a360e17, type: 3}
@@ -27459,7 +27451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7731398074928728459, guid: 7482220a18581e5468bcbb47a3a04f7f, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (8)
+      value: MovingPoint (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7482220a18581e5468bcbb47a3a04f7f, type: 3}
@@ -30082,7 +30074,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 254515396045148035, guid: a6f4491994285ca46b468fe4d4469c14, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (4)
+      value: MovingPoint (4)
       objectReference: {fileID: 0}
     - target: {fileID: 8758036542361490075, guid: a6f4491994285ca46b468fe4d4469c14, type: 3}
       propertyPath: m_RootOrder
@@ -32262,6 +32254,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1840862088
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 963194228}
+    m_Modifications:
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.5920906
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4056948
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.818399
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922195, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9131328577160922197, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
+      propertyPath: m_Name
+      value: Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b8f52a4475bf7d441aa55d9dbfd8226c, type: 3}
 --- !u!1 &1842309622
 GameObject:
   m_ObjectHideFlags: 0
@@ -33464,7 +33513,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2214316340132811754, guid: 445ca9ffb66929c43a287abbb1622599, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (5)
+      value: MovingPoint (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7257593992107183858, guid: 445ca9ffb66929c43a287abbb1622599, type: 3}
       propertyPath: m_RootOrder
@@ -34139,7 +34188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5804023825043632785, guid: 846c47f778e184e4ea6ea0cd15e02781, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (6)
+      value: MovingPoint (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 846c47f778e184e4ea6ea0cd15e02781, type: 3}
@@ -36366,7 +36415,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1156184342570118673, guid: 8382a6865d7388142be116fe35e0cbc2, type: 3}
       propertyPath: m_Name
-      value: MoviengPoint (1)
+      value: MovingPoint (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7640748445761401609, guid: 8382a6865d7388142be116fe35e0cbc2, type: 3}
       propertyPath: m_RootOrder
