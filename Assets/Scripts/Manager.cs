@@ -49,4 +49,5 @@ public class Manager : Loader<Manager>
             enemiesOnScreen -= 1;
         }
     }
+
 }
