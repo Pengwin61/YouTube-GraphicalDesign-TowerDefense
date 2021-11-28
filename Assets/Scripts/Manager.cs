@@ -13,8 +13,9 @@ public class Manager : Loader<Manager>
     [SerializeField] private int totalEnemies;
     [SerializeField] private int enemiesPerSpawn;
 
-    [SerializeField] private int enemiesOnScreen = 0;
     private const float spawnDelay = 0.5f;
+
+    public List<Enemy> EnemyList = new List<Enemy>();
 
 
     private void Start()
@@ -25,15 +26,14 @@ public class Manager : Loader<Manager>
 
     IEnumerator Spawn()
     {
-        if (enemiesPerSpawn > 0 && enemiesOnScreen < totalEnemies)
+        if (enemiesPerSpawn > 0 && EnemyList.Count < totalEnemies)
         {
             for (int i = 0; i < enemiesPerSpawn; i++)
             {
-                if (enemiesOnScreen < maxEnemiesOnScreen)
+                if (EnemyList.Count < maxEnemiesOnScreen)
                 {
                     GameObject newEnemy = Instantiate(enemies[1]) as GameObject;
                     newEnemy.transform.position = spawnPoint.transform.position;
-                    enemiesOnScreen += 1;
                 }
             }
 
@@ -42,12 +42,25 @@ public class Manager : Loader<Manager>
         }
     }
 
-    public void removeEnemyFromScreen()
+    public void RegisterEnemy(Enemy enemy)
     {
-        if (enemiesOnScreen > 0)
-        {
-            enemiesOnScreen -= 1;
-        }
+        EnemyList.Add(enemy);
     }
+
+    public void UnregisterEnemy(Enemy enemy)
+    {
+        EnemyList.Remove(enemy);
+        Destroy(enemy.gameObject);
+    }
+    
+    public void DestroyEnemies()
+    {
+        foreach (Enemy enemy in EnemyList)
+        {
+            Destroy(enemy.gameObject);
+        }
+        EnemyList.Clear();
+    }
+
 
 }
