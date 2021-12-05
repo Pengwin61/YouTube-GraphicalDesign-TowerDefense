@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7192857301915523509}
   - component: {fileID: 8657186031837156927}
+  - component: {fileID: 4901107650172285753}
   m_Layer: 0
   m_Name: Tower3
   m_TagString: Tower
@@ -82,3 +83,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4901107650172285753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941722895786578716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60635e8f0dcf3a74fa9148660aa2c05f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeBetweenAttacks: 1
+  attackRadius: 4
+  attackCounter: 0
+  projectile: {fileID: -3449201923652603205, guid: 435348d9036a0634286ecd877ad59a61, type: 3}
+  targetEnemy: {fileID: 0}

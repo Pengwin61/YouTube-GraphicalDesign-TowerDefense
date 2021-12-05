@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &9131328577160922197
+--- !u!1 &5564591983540629065
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,77 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9131328577160922195}
-  - component: {fileID: 9131328577160922196}
-  - component: {fileID: 3183184221890746602}
+  - component: {fileID: 1194502844611828638}
+  - component: {fileID: 3332697209891922771}
+  - component: {fileID: 8558463863890752551}
   m_Layer: 0
-  m_Name: Manager
+  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9131328577160922195
+--- !u!4 &1194502844611828638
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9131328577160922197}
+  m_GameObject: {fileID: 5564591983540629065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.5920906, y: 1.4056948, z: -7.818399}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9131328577160922196
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9131328577160922197}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f029a7320c4931742a9f9fbca38a7f48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoint: {fileID: 6552145523295653959, guid: 29e8e577c2085c04c9e61653fc3ff240, type: 3}
-  enemies:
-  - {fileID: -1753860250017016531, guid: cf5f37f167bdedc48bd0f54cba63bb63, type: 3}
-  - {fileID: 45190858962963022, guid: e9ef948c4ad2b3f409b135fe7d86bbd9, type: 3}
-  - {fileID: -2554338457082339471, guid: 7b6001367bb3f274ab7693b221c2ac7e, type: 3}
-  totalMoneyLabel: {fileID: 0}
-  currentWaveLabel: {fileID: 0}
-  playButtonLabel: {fileID: 0}
-  playButton: {fileID: 0}
-  totalEscapedLabel: {fileID: 0}
-  totalWaves: 100
-  waveNumber: 0
-  totalEnemies: 1
-  enemiesPerSpawn: 1
-  totalMoney: 10
-  totalEscaped: 0
-  roundEscaped: 0
-  totalKilled: 0
-  currentState: 1
-  EnemyList: []
---- !u!82 &3183184221890746602
+--- !u!82 &3332697209891922771
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9131328577160922197}
+  m_GameObject: {fileID: 5564591983540629065}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 24b281e07644e384788665befda73eea, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -160,3 +128,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8558463863890752551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5564591983540629065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98f7b91a42f562841801e4e466f266b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 8300000, guid: 8a31c4380da724e4996e964107eb7076, type: 3}
+  death: {fileID: 8300000, guid: 6a67b240310ce784ea056eba6a9d8ad0, type: 3}
+  fireBall: {fileID: 8300000, guid: 6e2de545daf2e304bb0784881abc79d9, type: 3}
+  gameOver: {fileID: 8300000, guid: 2929af82b2329c34ca4e8b4537964182, type: 3}
+  level: {fileID: 8300000, guid: 24b281e07644e384788665befda73eea, type: 3}
+  newGame: {fileID: 8300000, guid: a22925d65fe5fdf4fa57c3ec1071199c, type: 3}
+  rock: {fileID: 8300000, guid: eaccff75f1c4e99468c0e612e726d46d, type: 3}
+  towerBuilt: {fileID: 8300000, guid: f9ab93a0765929449ba06d2b0cb6671e, type: 3}
