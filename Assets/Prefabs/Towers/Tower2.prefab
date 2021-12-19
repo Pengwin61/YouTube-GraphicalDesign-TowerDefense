@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60635e8f0dcf3a74fa9148660aa2c05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.2
+  timeBetweenAttacks: 1.2
   attackRadius: 4
   attackCounter: 0
   projectile: {fileID: -4757804348100641007, guid: 5a0a2e67c80c6af46859978160e49e56, type: 3}
